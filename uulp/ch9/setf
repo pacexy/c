@@ -1,0 +1,239 @@
+'!'=0
+'#'=0
+'$'=9693
+'*'=(  )
+-=569JNRXZghikms
+0=/usr/bin/zsh
+'?'=0
+@=(  )
+ARGC=0
+BG
+CDPATH=''
+COLORTERM=truecolor
+COLUMNS=119
+CPUTYPE=x86_64
+CURRENT_BG=NONE
+CURRENT_FG=black
+DBUS_SESSION_BUS_ADDRESS='unix:path=/run/user/1000/bus'
+DESKTOP_SESSION=deepin
+DISPLAY=:0
+EDITOR=/usr/bin/nano
+EGID=1001
+EUID=1000
+FG
+FIGNORE=''
+FPATH=/home/pacexy/.oh-my-zsh/plugins/git:/home/pacexy/.oh-my-zsh/functions:/home/pacexy/.oh-my-zsh/completions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/functions/Calendar:/usr/share/zsh/functions/Chpwd:/usr/share/zsh/functions/Completion:/usr/share/zsh/functions/Completion/Base:/usr/share/zsh/functions/Completion/Linux:/usr/share/zsh/functions/Completion/Unix:/usr/share/zsh/functions/Completion/X:/usr/share/zsh/functions/Completion/Zsh:/usr/share/zsh/functions/Exceptions:/usr/share/zsh/functions/Math:/usr/share/zsh/functions/MIME:/usr/share/zsh/functions/Misc:/usr/share/zsh/functions/Newuser:/usr/share/zsh/functions/Prompts:/usr/share/zsh/functions/TCP:/usr/share/zsh/functions/VCS_Info:/usr/share/zsh/functions/VCS_Info/Backends:/usr/share/zsh/functions/Zftp:/usr/share/zsh/functions/Zle
+FUNCNEST=500
+FX
+GDMSESSION=deepin
+GID=1001
+GIO_LAUNCHED_DESKTOP_FILE=/usr/share/applications/deepin-terminal.desktop
+GIO_LAUNCHED_DESKTOP_FILE_PID=9687
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GTK2_RC_FILES=/home/pacexy/.gtkrc-2.0
+GTK_MODULES=canberra-gtk-module
+HISTCHARS='!^#'
+HISTCMD=377
+HISTFILE=/home/pacexy/.zsh_history
+HISTSIZE=50000
+HOME=/home/pacexy
+HOST=pc
+IBUS_DISABLE_SNOOPER=1
+IFS=$' \t\n\C-@'
+KEYBOARD_HACK=''
+KEYTIMEOUT=40
+LANG=en_US.UTF-8
+LANGUAGE=en_US
+LC_ADDRESS=zh_CN.UTF-8
+LC_CTYPE=en_US.UTF-8
+LC_IDENTIFICATION=zh_CN.UTF-8
+LC_MEASUREMENT=zh_CN.UTF-8
+LC_MONETARY=zh_CN.UTF-8
+LC_NAME=zh_CN.UTF-8
+LC_NUMERIC=zh_CN.UTF-8
+LC_PAPER=zh_CN.UTF-8
+LC_TELEPHONE=zh_CN.UTF-8
+LC_TIME=zh_CN.UTF-8
+LESS=-R
+LINENO=45
+LINES=21
+LISTMAX=100
+LOGCHECK=60
+LOGNAME=pacexy
+LSCOLORS=Gxfxcxdxbxegedabagacad
+LS_COLORS='rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+MACHTYPE=x86_64
+MAIL=/var/spool/mail/pacexy
+MAILCHECK=60
+MAILPATH=''
+MANPATH=''
+MENUSELECT=0
+MODULE_PATH=/usr/lib/zsh/5.7.1
+MOZ_PLUGIN_PATH=/usr/lib/mozilla/plugins
+NO_AT_BRIDGE=1
+NULLCMD=cat
+OLDPWD=/home/pacexy/c/uulp
+OPTARG=args
+OPTIND=1
+OSTYPE=linux-gnu
+PAGER=less
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+POST_1_7_2_GIT=1
+PPID=9687
+PROMPT='%{%f%b%k%}$(build_prompt) '
+PROMPT2='%_> '
+PROMPT3='?# '
+PROMPT4='+%N:%i> '
+PS1='%{%f%b%k%}$(build_prompt) '
+PS2='%_> '
+PS3='?# '
+PS4='+%N:%i> '
+PSVAR=''
+PWD=/home/pacexy/c/uulp/ch9
+QT_DBL_CLICK_DIST=15
+RANDOM=15506
+READNULLCMD=more
+SAVEHIST=10000
+SCREEN_NO=''
+SECONDS=8358
+SEGMENT_SEPARATOR=
+SHELL=/usr/bin/zsh
+SHLVL=1
+SHORT_HOST=pc
+SPROMPT='zsh: correct '\''%R'\'' to '\''%r'\'' [nyae]? '
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+TERM=xterm-256color
+TIMEFMT='%J  %U user %S system %P cpu %*E total'
+TMPPREFIX=/tmp/zsh
+TRY_BLOCK_ERROR=-1
+TRY_BLOCK_INTERRUPT=-1
+TTY=/dev/pts/3
+TTYIDLE=5
+UID=1000
+USER=pacexy
+USERNAME=pacexy
+VENDOR=pc
+VTE_VERSION=5600
+WATCH=''
+WATCHFMT='%n has %a %l from %m.'
+WORDCHARS=''
+XAUTHORITY=/home/pacexy/.Xauthority
+XDG_CURRENT_DESKTOP=Deepin
+XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/pacexy
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_SEAT=seat0
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+XDG_SESSION_CLASS=user
+XDG_SESSION_DESKTOP=deepin
+XDG_SESSION_ID=1
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+XDG_SESSION_TYPE=x11
+XDG_VTNR=1
+ZLE_LINE_ABORTED=$'\tcc'
+ZLS_COLORS='rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36::(-default-)rs=0:(-default-)di=01;34:(-default-)ln=01;36:(-default-)mh=00:(-default-)pi=40;33:(-default-)so=01;35:(-default-)do=01;35:(-default-)bd=40;33;01:(-default-)cd=40;33;01:(-default-)or=40;31;01:(-default-)mi=00:(-default-)su=37;41:(-default-)sg=30;43:(-default-)ca=30;41:(-default-)tw=30;42:(-default-)ow=34;42:(-default-)st=37;44:(-default-)ex=01;32:(-default-)*.tar=01;31:(-default-)*.tgz=01;31:(-default-)*.arc=01;31:(-default-)*.arj=01;31:(-default-)*.taz=01;31:(-default-)*.lha=01;31:(-default-)*.lz4=01;31:(-default-)*.lzh=01;31:(-default-)*.lzma=01;31:(-default-)*.tlz=01;31:(-default-)*.txz=01;31:(-default-)*.tzo=01;31:(-default-)*.t7z=01;31:(-default-)*.zip=01;31:(-default-)*.z=01;31:(-default-)*.dz=01;31:(-default-)*.gz=01;31:(-default-)*.lrz=01;31:(-default-)*.lz=01;31:(-default-)*.lzo=01;31:(-default-)*.xz=01;31:(-default-)*.zst=01;31:(-default-)*.tzst=01;31:(-default-)*.bz2=01;31:(-default-)*.bz=01;31:(-default-)*.tbz=01;31:(-default-)*.tbz2=01;31:(-default-)*.tz=01;31:(-default-)*.deb=01;31:(-default-)*.rpm=01;31:(-default-)*.jar=01;31:(-default-)*.war=01;31:(-default-)*.ear=01;31:(-default-)*.sar=01;31:(-default-)*.rar=01;31:(-default-)*.alz=01;31:(-default-)*.ace=01;31:(-default-)*.zoo=01;31:(-default-)*.cpio=01;31:(-default-)*.7z=01;31:(-default-)*.rz=01;31:(-default-)*.cab=01;31:(-default-)*.wim=01;31:(-default-)*.swm=01;31:(-default-)*.dwm=01;31:(-default-)*.esd=01;31:(-default-)*.jpg=01;35:(-default-)*.jpeg=01;35:(-default-)*.mjpg=01;35:(-default-)*.mjpeg=01;35:(-default-)*.gif=01;35:(-default-)*.bmp=01;35:(-default-)*.pbm=01;35:(-default-)*.pgm=01;35:(-default-)*.ppm=01;35:(-default-)*.tga=01;35:(-default-)*.xbm=01;35:(-default-)*.xpm=01;35:(-default-)*.tif=01;35:(-default-)*.tiff=01;35:(-default-)*.png=01;35:(-default-)*.svg=01;35:(-default-)*.svgz=01;35:(-default-)*.mng=01;35:(-default-)*.pcx=01;35:(-default-)*.mov=01;35:(-default-)*.mpg=01;35:(-default-)*.mpeg=01;35:(-default-)*.m2v=01;35:(-default-)*.mkv=01;35:(-default-)*.webm=01;35:(-default-)*.ogm=01;35:(-default-)*.mp4=01;35:(-default-)*.m4v=01;35:(-default-)*.mp4v=01;35:(-default-)*.vob=01;35:(-default-)*.qt=01;35:(-default-)*.nuv=01;35:(-default-)*.wmv=01;35:(-default-)*.asf=01;35:(-default-)*.rm=01;35:(-default-)*.rmvb=01;35:(-default-)*.flc=01;35:(-default-)*.avi=01;35:(-default-)*.fli=01;35:(-default-)*.flv=01;35:(-default-)*.gl=01;35:(-default-)*.dl=01;35:(-default-)*.xcf=01;35:(-default-)*.xwd=01;35:(-default-)*.yuv=01;35:(-default-)*.cgm=01;35:(-default-)*.emf=01;35:(-default-)*.ogv=01;35:(-default-)*.ogx=01;35:(-default-)*.aac=00;36:(-default-)*.au=00;36:(-default-)*.flac=00;36:(-default-)*.m4a=00;36:(-default-)*.mid=00;36:(-default-)*.midi=00;36:(-default-)*.mka=00;36:(-default-)*.mp3=00;36:(-default-)*.mpc=00;36:(-default-)*.ogg=00;36:(-default-)*.ra=00;36:(-default-)*.wav=00;36:(-default-)*.oga=00;36:(-default-)*.opus=00;36:(-default-)*.spx=00;36:(-default-)*.xspf=00;36'
+ZSH=/home/pacexy/.oh-my-zsh
+ZSH_ARGZERO=/usr/bin/zsh
+ZSH_CACHE_DIR=/home/pacexy/.oh-my-zsh/cache
+ZSH_COMPDUMP=/home/pacexy/.zcompdump-pc-5.7.1
+ZSH_CUSTOM=/home/pacexy/.oh-my-zsh/custom
+ZSH_EVAL_CONTEXT=toplevel
+ZSH_NAME=zsh
+ZSH_PATCHLEVEL=zsh-5.7.1-0-g8b89d0d
+ZSH_SPECTRUM_TEXT='Arma virumque cano Troiae qui primus ab oris'
+ZSH_SUBSHELL=0
+ZSH_THEME=agnoster
+ZSH_THEME_GIT_PROMPT_CLEAN=''
+ZSH_THEME_GIT_PROMPT_DIRTY='*'
+ZSH_THEME_GIT_PROMPT_PREFIX='git:('
+ZSH_THEME_GIT_PROMPT_SUFFIX=')'
+ZSH_THEME_TERM_TAB_TITLE_IDLE='%15<..<%~%<<'
+ZSH_THEME_TERM_TITLE_IDLE='%n@%m: %~'
+ZSH_VERSION=5.7.1
+_=set
+__savecursor=2
+__searching=up-line-or-beginning-search
+_comp_assocs=( '' )
+_comp_dumpfile=/home/pacexy/.zcompdump-pc-5.7.1
+_comp_options
+_comp_setup
+_compautos
+_comps
+_lastcomp
+_omz_git_git_cmd=git
+_patcomps
+_postpatcomps
+_services
+aliases
+argv=(  )
+bg
+bg_bold
+bg_no_bold
+bold_color
+builtins
+cdpath=(  )
+color=( [00]=none [01]=bold [02]=faint [03]=standout [04]=underline [05]=blink [07]=reverse [08]=conceal [22]=normal [23]=no-standout [24]=no-underline [25]=no-blink [27]=no-reverse [28]=no-conceal [30]=black [31]=red [32]=green [33]=yellow [34]=blue [35]=magenta [36]=cyan [37]=white [39]=default [40]=bg-black [41]=bg-red [42]=bg-green [43]=bg-yellow [44]=bg-blue [45]=bg-magenta [46]=bg-cyan [47]=bg-white [49]=bg-default [bg-black]=40 [bg-blue]=44 [bg-cyan]=46 [bg-default]=49 [bg-green]=42 [bg-grey]=40 [bg-magenta]=45 [bg-red]=41 [bg-white]=47 [bg-yellow]=43 [black]=30 [blink]=05 [blue]=34 [bold]=01 [conceal]=08 [cyan]=36 [default]=39 [faint]=02 [fg-black]=30 [fg-blue]=34 [fg-cyan]=36 [fg-default]=39 [fg-green]=32 [fg-grey]=30 [fg-magenta]=35 [fg-red]=31 [fg-white]=37 [fg-yellow]=33 [green]=32 [grey]=30 [magenta]=35 [no-blink]=25 [no-conceal]=28 [no-reverse]=27 [no-standout]=23 [no-underline]=24 [none]=00 [normal]=22 [red]=31 [reverse]=07 [standout]=03 [underline]=04 [white]=37 [yellow]=33 )
+colour=( [00]=none [01]=bold [02]=faint [03]=standout [04]=underline [05]=blink [07]=reverse [08]=conceal [22]=normal [23]=no-standout [24]=no-underline [25]=no-blink [27]=no-reverse [28]=no-conceal [30]=black [31]=red [32]=green [33]=yellow [34]=blue [35]=magenta [36]=cyan [37]=white [39]=default [40]=bg-black [41]=bg-red [42]=bg-green [43]=bg-yellow [44]=bg-blue [45]=bg-magenta [46]=bg-cyan [47]=bg-white [49]=bg-default [bg-black]=40 [bg-blue]=44 [bg-cyan]=46 [bg-default]=49 [bg-green]=42 [bg-grey]=40 [bg-magenta]=45 [bg-red]=41 [bg-white]=47 [bg-yellow]=43 [black]=30 [blink]=05 [blue]=34 [bold]=01 [conceal]=08 [cyan]=36 [default]=39 [faint]=02 [fg-black]=30 [fg-blue]=34 [fg-cyan]=36 [fg-default]=39 [fg-green]=32 [fg-grey]=30 [fg-magenta]=35 [fg-red]=31 [fg-white]=37 [fg-yellow]=33 [green]=32 [grey]=30 [magenta]=35 [no-blink]=25 [no-conceal]=28 [no-reverse]=27 [no-standout]=23 [no-underline]=24 [none]=00 [normal]=22 [red]=31 [reverse]=07 [standout]=03 [underline]=04 [white]=37 [yellow]=33 )
+commands
+comppostfuncs=(  )
+compprefuncs=(  )
+custom_config_file=/home/pacexy/.oh-my-zsh/custom/lib/theme-and-appearance.zsh
+d=/usr/share/zsh/functions/Zle
+dirstack
+dis_aliases
+dis_builtins
+dis_functions
+dis_functions_source
+dis_galiases
+dis_patchars
+dis_reswords
+dis_saliases
+fg
+fg_bold
+fg_no_bold
+fignore=(  )
+fpath=( /home/pacexy/.oh-my-zsh/plugins/git /home/pacexy/.oh-my-zsh/functions /home/pacexy/.oh-my-zsh/completions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/functions/Calendar /usr/share/zsh/functions/Chpwd /usr/share/zsh/functions/Completion /usr/share/zsh/functions/Completion/Base /usr/share/zsh/functions/Completion/Linux /usr/share/zsh/functions/Completion/Unix /usr/share/zsh/functions/Completion/X /usr/share/zsh/functions/Completion/Zsh /usr/share/zsh/functions/Exceptions /usr/share/zsh/functions/Math /usr/share/zsh/functions/MIME /usr/share/zsh/functions/Misc /usr/share/zsh/functions/Newuser /usr/share/zsh/functions/Prompts /usr/share/zsh/functions/TCP /usr/share/zsh/functions/VCS_Info /usr/share/zsh/functions/VCS_Info/Backends /usr/share/zsh/functions/Zftp /usr/share/zsh/functions/Zle )
+funcfiletrace
+funcsourcetrace
+funcstack
+functions
+functions_source
+functrace
+galiases
+histchars='!^#'
+history
+historywords
+jobdirs
+jobstates
+jobtexts
+keymaps
+langinfo
+mailpath=(  )
+manpath=(  )
+module_path=( /usr/lib/zsh/5.7.1 )
+modules
+nameddirs
+options
+parameters
+patchars
+path=( /usr/local/bin /usr/bin /bin /usr/local/sbin /usr/lib/jvm/default/bin /usr/bin/site_perl /usr/bin/vendor_perl /usr/bin/core_perl )
+pipestatus=( 0 )
+plugin=git
+plugins=( git )
+precmd_functions=( omz_termsupport_precmd )
+preexec_functions=( omz_termsupport_preexec )
+prompt='%{%f%b%k%}$(build_prompt) '
+psvar=(  )
+reset_color
+reswords
+saliases
+signals=( EXIT HUP INT QUIT ILL TRAP ABRT BUS FPE KILL USR1 SEGV USR2 PIPE ALRM TERM STKFLT CHLD CONT STOP TSTP TTIN TTOU URG XCPU XFSZ VTALRM PROF WINCH POLL PWR SYS ZERR DEBUG )
+status=0
+termcap
+terminfo
+userdirs
+usergroups
+watch=(  )
+widgets
+zle_bracketed_paste=( $'\C-[[?2004h' $'\C-[[?2004l' )
+zsh_eval_context=( toplevel )
+zsh_scheduled_events

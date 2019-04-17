@@ -1,0 +1,75 @@
+Script started on 2019-04-06 11:51:38+08:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="86" LINES="25"]
+[1m[7m%[27m[1m[0m                                                                                      ]2;pacexy@pc: ~/c/uulp/ch9]1;~/c/uulp/ch9[0m[27m[24m[J[39m[0m[49m[40m[39m pacexy@pc [44m[30m[30m ~/c/uulp/ch9 [49m[34m[39m [K[?1h=[?2004hrread NAME[?1l>[?2004l
+]2;read NAME]1;reada
+[1m[7m%[27m[1m[0m                                                                                      ]2;pacexy@pc: ~/c/uulp/ch9]1;~/c/uulp/ch9[0m[27m[24m[J[39m[0m[49m[40m[39m pacexy@pc [44m[30m[30m ~/c/uulp/ch9 [49m[34m[39m [K[?1h=[?2004hNNAME[?1l>[?2004l
+]2;NAME]1;NAMEzsh: command not found: NAME
+[1m[7m%[27m[1m[0m                                                                                      ]2;pacexy@pc: ~/c/uulp/ch9]1;~/c/uulp/ch9[0m[27m[24m[J[39m[0m[49m[40m[39m [31m✘[40m[39m pacexy@pc [44m[30m[30m ~/c/uulp/ch9 [49m[34m[39m [K[?1h=[?2004heecho NAME[?1l>[?2004l
+]2;echo NAME]1;echoNAME
+[1m[7m%[27m[1m[0m                                                                                      ]2;pacexy@pc: ~/c/uulp/ch9]1;~/c/uulp/ch9[0m[27m[24m[J[39m[0m[49m[40m[39m pacexy@pc [44m[30m[30m ~/c/uulp/ch9 [49m[34m[39m [K[?1h=[?2004hecho NAME$NAME[?1l>[?2004l
+]2;echo $NAME]1;echoa
+[1m[7m%[27m[1m[0m                                                                                      ]2;pacexy@pc: ~/c/uulp/ch9]1;~/c/uulp/ch9[0m[27m[24m[J[39m[0m[49m[40m[39m pacexy@pc [44m[30m[30m ~/c/uulp/ch9 [49m[34m[39m [K[?1h=[?2004heenv[?1l>[?2004l
+]2;env]1;envSSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+LANGUAGE=en_US
+LANG=en_US.UTF-8
+XDG_CURRENT_DESKTOP=Deepin
+GDMSESSION=deepin
+LC_IDENTIFICATION=zh_CN.UTF-8
+GIO_LAUNCHED_DESKTOP_FILE_PID=85930
+XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/pacexy
+COLORTERM=truecolor
+HOME=/home/pacexy
+USER=pacexy
+TERM=xterm-256color
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+NO_AT_BRIDGE=1
+DESKTOP_SESSION=deepin
+QT_DBL_CLICK_DIST=15
+LC_MEASUREMENT=zh_CN.UTF-8
+XDG_VTNR=1
+XDG_SEAT=seat0
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+LC_NUMERIC=zh_CN.UTF-8
+GTK_MODULES=canberra-gtk-module
+VTE_VERSION=5600
+XDG_SESSION_DESKTOP=deepin
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+LC_TIME=zh_CN.UTF-8
+MAIL=/var/spool/mail/pacexy
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+LOGNAME=pacexy
+LC_PAPER=zh_CN.UTF-8
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+XDG_RUNTIME_DIR=/run/user/1000
+SHELL=/usr/bin/zsh
+XDG_SESSION_TYPE=x11
+LC_MONETARY=zh_CN.UTF-8
+GTK2_RC_FILES=/home/pacexy/.gtkrc-2.0
+LC_TELEPHONE=zh_CN.UTF-8
+EDITOR=/usr/bin/nano
+XDG_SESSION_ID=1
+GIO_LAUNCHED_DESKTOP_FILE=/usr/share/applications/deepin-terminal.desktop
+IBUS_DISABLE_SNOOPER=1
+PWD=/home/pacexy/c/uulp/ch9
+SHLVL=2
+XAUTHORITY=/home/pacexy/.Xauthority
+LC_NAME=zh_CN.UTF-8
+DISPLAY=:0
+XDG_SESSION_CLASS=user
+LC_ADDRESS=zh_CN.UTF-8
+MOZ_PLUGIN_PATH=/usr/lib/mozilla/plugins
+OLDPWD=/home/pacexy/c/uulp/ch9
+ZSH=/home/pacexy/.oh-my-zsh
+PAGER=less
+LESS=-R
+LSCOLORS=Gxfxcxdxbxegedabagacad
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+_=/usr/bin/env
+LC_CTYPE=en_US.UTF-8
+[1m[7m%[27m[1m[0m                                                                                      ]2;pacexy@pc: ~/c/uulp/ch9]1;~/c/uulp/ch9[0m[27m[24m[J[39m[0m[49m[40m[39m pacexy@pc [44m[30m[30m ~/c/uulp/ch9 [49m[34m[39m [K[?1h=[?2004henv | grep NAME[?1l>[?2004l
+]2;env | grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn} NAME]1;envLOG[01;31m[KNAME[m[K=pacexy
+LC_[01;31m[KNAME[m[K=zh_CN.UTF-8
+[1m[7m%[27m[1m[0m                                                                                      ]2;pacexy@pc: ~/c/uulp/ch9]1;~/c/uulp/ch9[0m[27m[24m[J[39m[0m[49m[40m[39m pacexy@pc [44m[30m[30m ~/c/uulp/ch9 [49m[34m[39m [K[?1h=[?2004heecho $HOME[?1l>[?2004l
+]2;echo $HOME]1;echo/home/pacexy
+[1m[7m%[27m[1m[0m                                                                                      ]2;pacexy@pc: ~/c/uulp/ch9]1;~/c/uulp/ch9[0m[27m[24m[J[39m[0m[49m[40m[39m pacexy@pc [44m[30m[30m ~/c/uulp/ch9 [49m[34m[39m [K[?1h=[?2004h[?2004l
+
+Script done on 2019-04-06 13:24:54+08:00 [COMMAND_EXIT_CODE="0"]

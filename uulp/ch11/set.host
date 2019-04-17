@@ -1,0 +1,9 @@
+127.0.0.1 localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1 localhost localhost.localdomain localhost6 localhost6.localdomain6
+192.168.10.10 master.303kfy.net master localhost.localdomain
+192.168.10.51 slave1.303kfy.net slave1 localhost.localdomain
+192.168.10.52 slave2.303kfy.net slave2 localhost.localdomain
+192.168.10.53 slave3.303kfy.net slave3 localhost.localdomain
+192.168.10.54 slave4.303kfy.net slave4 localhost.localdomain
+192.168.10.55 slave5.303kfy.net slave5 localhost.localdomain
+192.168.10.56 slave6.303kfy.net slave6 localhost.localdomain
