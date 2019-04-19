@@ -30,6 +30,7 @@ int make_server_socket_q(int port, int queue)
         oops("gethostname");
     he = gethostbyname(host);
     bcopy((void *) he->h_addr_list[0], (void *) &saddr.sin_addr, he->h_length);
+
     saddr.sin_port = htons(port);
     saddr.sin_family = AF_INET;
     if (bind(sockfd, (struct sockaddr *) &saddr, sizeof(saddr)) != 0)
