@@ -37,7 +37,8 @@ int main(int argc, char *argv[])
     gethostname(host, BUFSIZ);
     printf("%s\n", host);
     hp = gethostbyname(host);
-    bcopy((void *) hp->h_addr_list, (void *) &sa.sin_addr, hp->h_length);
+    //don't forget the [0]
+    bcopy((void *) hp->h_addr_list[0], (void *) &sa.sin_addr, hp->h_length);
     sa.sin_port = htons(port);
     sa.sin_family = AF_INET;
     printf("%s\n", inet_ntoa(sa.sin_addr));

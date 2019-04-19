@@ -4,16 +4,25 @@
 #include <string.h>
 #include <strings.h>
 #include <netdb.h>
+#include <arpa/inet.h>
+
+void oops(char *s)
+{
+    perror(s);
+    exit(1);
+}
 
 int main(int argc, char *argv[])
 {
     struct sockaddr_in sa;
     struct hostent *hp;
     int sockfd;
+    char *msg;
     socklen_t sl;
 
     sockfd = socket(PF_INET, SOCK_DGRAM, 0);
     
+    msg = argv[3];
     sl = sizeof(sa);
     bzero((void *) &sa, sl);
     hp = gethostbyname(argv[1]);
@@ -21,7 +30,11 @@ int main(int argc, char *argv[])
     sa.sin_port = htons(atoi(argv[2]));
     sa.sin_family = AF_INET;
 
-    sendto(sockfd, argv[3], BUFSIZ, 0, (struct sockaddr *) &sa, sl);
+    printf("%s\n", inet_ntoa(sa.sin_addr));
+    //strlen(msg) is necessary, BUFSIZ will cause error
+    if (sendto(sockfd, msg, strlen(msg), 0, (struct sockaddr *) &sa, sl) == -1)
+
+        oops("sendto");
 
     return 0;
 }
