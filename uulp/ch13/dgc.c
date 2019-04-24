@@ -15,9 +15,11 @@ void oops(char *s)
 int main(int argc, char *argv[])
 {
     struct sockaddr_in sa;
+    struct sockaddr_in sa_s;
     struct hostent *hp;
     int sockfd;
     char *msg;
+    char reply[BUFSIZ];
     socklen_t sl;
 
     sockfd = socket(PF_INET, SOCK_DGRAM, 0);
@@ -30,11 +32,13 @@ int main(int argc, char *argv[])
     sa.sin_port = htons(atoi(argv[2]));
     sa.sin_family = AF_INET;
 
-    printf("%s\n", inet_ntoa(sa.sin_addr));
     //strlen(msg) is necessary, BUFSIZ will cause error
     if (sendto(sockfd, msg, strlen(msg), 0, (struct sockaddr *) &sa, sl) == -1)
-
         oops("sendto");
+    
+    if (recvfrom(sockfd, reply, BUFSIZ, 0, NULL, NULL) == -1)
+        oops("recvfrom");
 
+    printf("%s\n", reply);
     return 0;
 }

@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
     struct hostent *hp;
     char host[BUFSIZ];
     char msg[BUFSIZ];
+    char reply[BUFSIZ];
     char c_ip[BUFSIZ];
     int sockfd;
     int port;
@@ -35,26 +36,29 @@ int main(int argc, char *argv[])
     sl = sizeof(sa);
     bzero((void *) &sa, sl);
     gethostname(host, BUFSIZ);
-    printf("%s\n", host);
     hp = gethostbyname(host);
     //don't forget the [0]
     bcopy((void *) hp->h_addr_list[0], (void *) &sa.sin_addr, hp->h_length);
     sa.sin_port = htons(port);
     sa.sin_family = AF_INET;
-    printf("%s\n", inet_ntoa(sa.sin_addr));
 
     if (bind(sockfd, (struct sockaddr*) &sa, sl) == -1)
         oops("bind");
 
     while ((msglen = recvfrom(sockfd, msg, BUFSIZ, 0, (struct sockaddr*) &sa_c, &sl)) > 0) {
-        printf("aaa");
-        msg[msglen] = '\0';
+        /* msg[msglen] = '\0'; */
         printf("get a message: %s\n", msg);
+        /* printf("msglen: %d\n", msglen); */
         strncpy(c_ip, inet_ntoa(sa_c.sin_addr), BUFSIZ);
         c_port = ntohs(sa_c.sin_port);
-        printf("ip: %s:%d", c_ip, c_port);
+        /* printf("server ip: %s:%d\n", inet_ntoa(sa.sin_addr), port); */
+        /* printf("custom ip: %s:%d\n", c_ip, c_port); */
+        /* if /n is ignore, fflush should be added to flush the buffer */
+        /* fflush(stdout); */
+        sprintf(reply, "have received your msg\n");
+        if (sendto(sockfd, reply, strlen(reply), 0, (struct sockaddr *) &sa_c, sl) == -1)
+            oops("sendto");
     }
 
-    printf("%d\n", msglen);
     return 0;
 }
