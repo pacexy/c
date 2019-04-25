@@ -42,14 +42,16 @@ void narrate(const char *s1, const char *s2, struct sockaddr_in *sa_c)
 {
     char *ip; 
     int port;
-    fprintf(stderr, "SERVER: %s:%s ", s1, s2);
+    /* fprintf(stderr, "SERVER: %s:%s ", s1, s2); */
     if (sa_c) {
         ip = inet_ntoa(sa_c->sin_addr);
         port = ntohs(sa_c->sin_port);
-        fprintf(stderr, "(%s:%d)", ip, port);
+        fprintf(stderr, "SERVER: %s:%s (%s:%d)\n", s1, s2, ip, port);
     }
+    else
+        fprintf(stderr, "SERVER: %s:%s\n", s1, s2);
     /* fflush(stdout); */
-    putc('\n', stderr);
+    /* putc('\n', stderr); */
 }
 void free_ticket(void)
 {

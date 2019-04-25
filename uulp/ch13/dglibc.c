@@ -74,17 +74,28 @@ int get_ticket(void)
     return -1;
 }
 
-void do_regular_work(void)
+int do_regular_work(void)
 {
     char msg[MSGLEN];
+    char *response, *transaction(char *);
     sprintf(msg, "VALD %s", ticket);
 
     printf("SuperSleep version 1.0 Running -Licensed Software\n");
     sleep(10);
-    if (sendto(sockfd, msg, MSGLEN, 0, (struct sockaddr *) &sa, sl) == -1)
-        perror("sendto: can't valid");
+    if ((response = transaction(msg)) == NULL)
+        return -1;
 
-    sleep(10);
+    if (strncmp(response, "GOOD", 4) == 0) {
+        narrate("valid ticket", "");
+        sleep(10);
+        return 0;
+    }
+    else if (strncmp(response, "FAIL", 4) == 0)
+        narrate("invalid ticket", "");
+    else
+        narrate("invalid response", response);
+
+    return -1;
 }
 
 int release_ticket(void)
@@ -106,7 +117,7 @@ int release_ticket(void)
     else if (strncmp(response, "FAIL", 4) == 0)
         narrate("released FAIL", "");
     else
-        narrate("invalid request", response);
+        narrate("invalid response", response);
     return -1;
 }
 
