@@ -14,6 +14,11 @@
 #define MAXNUM  3
 #define PORT    2333
 
+#include <signal.h>
+#include <errno.h>
+
+#define RECLAIM_INTERVAL 10
+
 static int sockfd;
 static int ticket_list[MAXNUM];
 static int rest;
@@ -25,6 +30,7 @@ static char host[HOSTLEN];
 
 char *hello(char *);
 char *goodbye(char *);
+char *valid(char *);
 
 void oops(const char *s)
 {
@@ -37,11 +43,11 @@ void narrate(const char *s1, const char *s2, struct sockaddr_in *sa_c)
     char *ip; 
     int port;
     fprintf(stderr, "SERVER: %s:%s ", s1, s2);
-    /* if (sa_c) { */
+    if (sa_c) {
         ip = inet_ntoa(sa_c->sin_addr);
         port = ntohs(sa_c->sin_port);
         fprintf(stderr, "(%s:%d)", ip, port);
-    /* } */
+    }
     /* fflush(stdout); */
     putc('\n', stderr);
 }
@@ -80,24 +86,34 @@ void finish(void)
 void transaction(void)
 {
     int msglen;
+    int time_left;
     char msg[MSGLEN];
     char *response;
     struct sockaddr_in sa_c;
 
+
     if ((msglen = recvfrom(sockfd, msg, MSGLEN, 0, (struct sockaddr *) &sa_c, &sl)) == -1)
         perror("recvfrom");
-
     narrate(" GOT", msg, &sa_c);
+
+    time_left = alarm(0);
+    /* printf("time_left: %d\n", time_left); */
+
     if (strncmp(msg, "HELO", 4) == 0) 
         response = hello(msg);
     else if (strncmp(msg, "GBYE", 4) == 0)
         response = goodbye(msg);
+    else if (strncmp(msg, "VALD", 4) == 0)
+        response = valid(msg);
     else 
         response = (char *) "FAIL invalid request";
 
+    narrate("SAID", response, &sa_c);
+    /* 为什么放在后面不行 */
     if (sendto(sockfd, response, MSGLEN, 0, (struct sockaddr *) &sa_c, sl) == -1)
         perror("sendto");
-    narrate("SAID", response, &sa_c);
+
+    alarm(time_left);
 }
 
 char *hello(char *msg) {
@@ -137,4 +153,41 @@ char *goodbye(char *msg) {
     rest++;
 
     return response;
+}
+
+char *valid(char *msg)
+{
+    int pid;
+    int slot;
+
+    if ((sscanf(msg+5, "%d.%d", &pid, &slot) == 2) && (ticket_list[slot] == pid)) {
+        return (char *) "GOOD Valid ticket";
+    }
+
+    narrate("Bogus ticket", msg+5, NULL);
+    return (char *) "FAIL invalid ticket";
+}
+
+
+/* process crush */
+
+#define TICKLEN 16
+
+void ticket_reclaim(int s)
+{
+    int i;
+    char ticket[TICKLEN];
+
+    /* printf("reclaim\n"); */
+    for (i = 0; i < MAXNUM; i++) {
+        if (ticket_list[i] != 0 && (kill(ticket_list[i], 0) == -1) && errno == ESRCH) {
+            sprintf(ticket, "%d.%d", ticket_list[i], i);
+            narrate("freeing", ticket, NULL);
+            /* printf("aa\n"); */
+            ticket_list[i] = 0;
+            rest++;
+        }
+    }
+    alarm(RECLAIM_INTERVAL);
+    /* printf("quit\n"); */
 }

@@ -76,8 +76,15 @@ int get_ticket(void)
 
 void do_regular_work(void)
 {
+    char msg[MSGLEN];
+    sprintf(msg, "VALD %s", ticket);
+
     printf("SuperSleep version 1.0 Running -Licensed Software\n");
-    sleep(5);
+    sleep(10);
+    if (sendto(sockfd, msg, MSGLEN, 0, (struct sockaddr *) &sa, sl) == -1)
+        perror("sendto: can't valid");
+
+    sleep(10);
 }
 
 int release_ticket(void)
