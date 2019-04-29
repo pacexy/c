@@ -40,6 +40,7 @@ int main(int ac, char *av[])
 {
     int sockfd;
     int fd;
+    int *fdp;
     pthread_t t;
     pthread_attr_t attr;
     void *handle_call(void *);
@@ -55,7 +56,8 @@ int main(int ac, char *av[])
         server_request++;
         pthread_create(&t, &attr, handle_call, (void *) &fd);
 
-        close(fd);
+        /* what a fucking error */
+        /* close(fd); */
     }
 
 }
@@ -76,17 +78,19 @@ void *handle_call(void *fdp)
     char request[MSGLEN];
     int fd = *(int *) fdp;
     FILE *fp = fdopen(fd, "r");
+        perror("fdopen");
     
     if (fgets(request, MSGLEN, fp) == NULL) {
         perror("fgets");
         return NULL;
     }
 
-    printf("got a connect on %d: %s\n", fd, request);
+    /* printf("got a connect on %d: %s\n", fd, request); */
     skip_rest(fp);
 
     handle_request(request, fd);
 
+    close(fd);
     fclose(fp);
     return NULL;
 }
@@ -154,17 +158,18 @@ void qwq_builtin(int fd)
     int bytes = 0;
 
     bytes += http_reply(fd, &fp, 200, "OK", "text/plain", NULL);
-    bytes += fprintf(fp, "Running time: %s\n", ctime(&server_started));
+    bytes += fprintf(fp, "Running time: %s", ctime(&server_started));
     bytes += fprintf(fp, "Received request: %d\n", server_request);
+    bytes += fprintf(fp, "Send bytes: %d\n", server_sent);
 
-    server_request += bytes;
+    server_sent += bytes;
     fclose(fp);
 }
 
 int notfile(const char *arg)
 {
     struct stat st;
-    return (stat(arg, &st) == -1) ? 0:1;
+    return (stat(arg, &st) == -1) ? 1:0;
 }
 
 void qwq_notfile(int fd)
@@ -246,8 +251,8 @@ void qwq_cat(const char *arg, int fd)
     else if (strcmp(extention, "png") == 0)
         type = (char *) "image/png";
 
+    bytes += http_reply(fd, &fpsock, 200, "OK", type, NULL);
     while ((c = getc(fpfile)) != EOF) {
-        bytes += http_reply(fd, &fpsock, 200, "OK", type, NULL);
         putc(c, fpsock);
         bytes++;
     }
