@@ -37,6 +37,7 @@ int main()
         fd = accept(sockfd ,NULL, NULL);
         fpin = fdopen(sockfd, "r");
         fgets(request, BUFSIZ, fpin);
+        printf("got a call: %s", request);
         skip_rest(fpin);
         process_request(request, fd);
         fclose(fpin);
